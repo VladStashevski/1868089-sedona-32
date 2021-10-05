@@ -6,6 +6,8 @@
   </head>
   <body>
    <header class="page-header">
+    <img class="logo" src="#" alt="Логотип Седоны">
+
     <nav class="navigation">
        <ul class="navigation-list">
          <li class="navigation-item">
@@ -18,33 +20,30 @@
           <a class="navigation-link" href="hotels.html">Гостиницы</a>
         </li>
        </ul>
+    </nav>
 
-       <ul class="navigation-list">
-         <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
-         </li>
-         <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Понравившиеся</span></a>
-         </li>
-         <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">ХОЧУ СЮДА!</span></a>
-         </li>
-       </ul>
-     </nav>
+    <ul class="navigation-list navigation-user">
+      <li class="navigation-item">
+       <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+      </li>
+      <li class="navigation-item">
+       <a class="navigation-link" href="#"><span class="visually-hidden">Понравившиеся</span></a>
+      </li>
+      <li class="navigation-item">
+       <a class="navigation-link" href="#"><span class="visually-hidden">ХОЧУ СЮДА!</span></a>
+      </li>
+    </ul>
    </header>
 
    <main class="main-index">
      <h1 class="visually-hidden">Седона Welcome</h1>
-     <img class="logo" src="#" alt="Логотип Седоны">
 
     <section class="advantages">
       <div class="advantages__header">
         <h1 class="advantages_title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="advantages_description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
-    </section>
 
-    <section class="advantages">
      <h2 class="visually-hidden">НАСТОЯЩИЙ ГОРОДОК</h2>
      <img class="logo" src="#" alt="Фото городка">
      <p class="advantages_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -62,9 +61,7 @@
           <p class="advantages_description">Не только китайского, но и настоящего местного производства!</p>
         </li>
       </ul>
-    </section>
 
-    <section class="advantages">
       <h2 class="visually-hidden">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
       <img class="logo" src="#" alt="Фото моста ДЬЯВОЛА">
       <p class="advantages_description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -95,12 +92,10 @@
       <P class="newsletter_description">Только полезная информация и никакого спама, честное бойскаутское!</P>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
       <p class="newsletter-email">
-        <label class="visually-hidden" for="newsletter-email">Email</label>
+        <label class="visually-hidden">Ваш e-mail</label>
       <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter" required>
       </p>
-      <button class="button newsletter-button" type="sumbit">
-        <span class="visually-hidden">Отправить</span>
-      </button>
+      <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
       </form>
     </section>
    </main>
@@ -108,7 +103,7 @@
    <footer class="page-footer">
      <section class="footer-contacts">
        <h2 class="visually-hidden">Контакты</h2>
-       <adress clas="contacts-logo">
+       <adress class="contacts-logo">
          <a class="contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
        </adress>
      </section>
