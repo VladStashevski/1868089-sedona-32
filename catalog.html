@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
    <header class="page-header">
-    <img class="logo" src="#" alt="Логотип Седоны">
+    <img class="logo" src="image/sedona_logo.svg" width="138" height="70" alt="Логотип Седоны">
 
     <nav class="navigation">
        <ul class="navigation-list">
          <li class="navigation-item">
-          <a class="navigation-link" href="main.html">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
          </li>
          <li class="navigation-item">
           <a class="navigation-link" href="aboutsedona.html">О Седоне</a>
          </li>
          <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
         </li>
        </ul>
     </nav>
@@ -131,8 +132,8 @@
       <button class="button" type="submit">ПРИМЕНИТЬ</button>
       <button class="button" type="submit">Сбросить</button>
       </form>
-    </section>
 
+      <div class="sorting-container">
       <form class="sorting-type">
         <label class="visually-hidden" for="sorting">Сортировка</label>
         <select class="select-control" id="sorting" name="sorting">
@@ -151,56 +152,41 @@
       <a href="#" class="button">
         <span class="visually-hidden">Показать список</span>
       </a>
+    </div>
 
       <ul class="product-list">
        <li class="product-card">
-        <a class="product-card-link" href="product.html">
-          <img class="product-card-image" src="" alt="">
-          <h3 class="product-card-title">Amara Resort & Spa</h3>
-          <p class="product-card_description">Гостиница</p>
-          <p class="product-card_description">Рейтинг:8.5</p>
-        </a>
-        <span class="product-card-price">От 4000 ₽</span>
+          <a href="product.html"><img class="product-card-image" src="image/catalog/hotel-1.jpg" width="180" height="120" alt="Фото Гостиницы"></a>
+          <div class="product-card-description">Amara Resort & Spa Гостиница От 4000 ₽</div>
+          <div class="product-card-rating">Рейтинг:8.5</div>
         <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
         <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
        </li>
 
        <li class="product-card">
-        <a class="product-card-link" href="product.html">
-          <img class="product-card-image" src="" alt="">
-          <h3 class="product-card-title">Desert Quail Inn</h3>
-          <p class="product-card_description">Мотель</p>
-          <p class="product-card_description">Рейтинг:8.9</p>
-        </a>
-        <span class="product-card-price">От 3000 ₽</span>
+        <a href="product.html"><img class="product-card-image" src="image/catalog/hotel-2.jpg" width="180" height="120" alt="Фото Мотеля"></a>
+         <div class="product-card-description">Desert Quail Inn Мотель От 3000 ₽</div>
+         <div class="product-card-rating">Рейтинг:8.9</div>
         <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
         <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
        </li>
 
        <li class="product-card">
-        <a class="product-card-link" href="product.html">
-          <img class="product-card-image" src="" alt="">
-          <h3 class="product-card-title">Villas at Poco Diablo</h3>
-          <p class="product-card_description">Апартаменты</p>
-          <p class="product-card_description">Рейтинг:9.2</p>
-        </a>
-        <span class="product-card-price">От 2000 ₽</span>
+        <a href="product.html"><img class="product-card-image" src="image/catalog/hotel-3.jpg" width="180" height="120" alt="Фото Апартаментов"></a>
+         <div class="product-card-description">Villas at Poco Diablo Апартаменты От 2000 ₽</div>
+         <div class="product-card-rating">Рейтинг:9.2</div>
         <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
         <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
        </li>
 
        <li class="product-card">
-        <a class="product-card-link" href="product.html">
-          <img class="product-card-image" src="" alt="">
-          <h3 class="product-card-title">GreenTree Inn</h3>
-          <p class="product-card_description">Гостиница</p>
-          <p class="product-card_description">Рейтинг:9.2</p>
-        </a>
-        <span class="product-card-price">От 3000 ₽</span>
+        <a href="product.html"><img class="product-card-image" src="image/catalog/hotel-4.jpg" width="180" height="120" alt="Фото Гостиницы"></a>
+         <div class="product-card-description">GreenTree Inn Гостиница От 3000 ₽</div>
+         <div class="product-card-rating">Рейтинг:9.2</div>
         <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
         <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
        </li>
-    <button class="button pagination-show-more" type="button">Загрузить еще</button>
+     <button class="button pagination-show-more" type="button">Загрузить еще</button>
      </ul>
 
      <ul class="pagination">
@@ -222,7 +208,8 @@
       <li class="pagination-item">
         <a class="pagination-link" href="#">10</a>
        </li>
-    </ul>
+     </ul>
+    </section>
 
     <section class="newsletter">
       <h2 class="page_title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
