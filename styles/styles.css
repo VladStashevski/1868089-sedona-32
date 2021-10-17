@@ -101,6 +101,10 @@ body {
   color: #000000;
 }
 
+.newsletter {
+  background-image: url(/image/catalog-background\ 1.jpg);
+}
+
 
 .page-footer a {
   color: #000000;
@@ -112,15 +116,15 @@ body {
   color: #000000;
 }
 
+.catalog-products {
+  background-image: url(/image/catalog-background\ 1.jpg);
+}
 
 .inner-header-title {
   font-size: 18px;
   line-height: 23px;
   text-transform: uppercase;
   color: #000000;
-  background-image: url(/image/catalog-background\ 1.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 
