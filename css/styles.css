@@ -54,7 +54,7 @@ body {
 
 .main-index {
   color: #000000;
-  background-image: url("/img/background-index.jpg");
+  background-image: url("../img/background-index.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -102,7 +102,7 @@ body {
 }
 
 .newsletter {
-  background-image: url("/img/background-newsletter.jpg");
+  background-image: url("../img/background-newsletter.jpg");
 }
 
 
@@ -117,7 +117,7 @@ body {
 }
 
 .catalog-products {
-  background-image: url(/image/catalog-background\ 1.jpg);
+  background-image: url("../img/background-catalog.jpg");
 }
 
 .inner-header-title {
