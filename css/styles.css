@@ -615,6 +615,18 @@ a.product-card-button button {
 }
 
 
+
+.product {
+  display: flex;
+  justify-content: center;
+  width: 1056px;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 70px;
+  outline: 2px solid rgb(5, 92, 255);
+  outline-offset: -5px
+}
+
 .sorting-container {
   display: flex;
   justify-content: flex-end;
