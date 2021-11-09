@@ -35,7 +35,7 @@ html {
 }
 
 .navigation-link:hover {
-  background-color: #0400ff;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .navigation-link:focus {
@@ -45,13 +45,13 @@ html {
 
 .button:hover,
 .footer-social-link:hover {
-  background-color: #814B18;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .button:focus,
 .footer-social-link:focus {
-  outline: 2px solid #DBB590;
-  background-color: #4E2E0E;
+  outline: 2px solid rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 1);
 }
 
 
@@ -464,11 +464,11 @@ li.advantages-town {
   cursor: pointer;
 }
 .range-toggle:hover {
-  background-color: #DBB590;
+  background-color: rgba(242, 242, 242, 1);
 }
 .range-toggle:active,
 .range-toggle:focus {
-  outline: 3px solid #DBB590;
+  outline: 3px solid rgba(242, 242, 242, 1);
 }
 .toggle-min {
   top: -8px;
@@ -557,33 +557,18 @@ width: 625px;
   border-radius: 5px;
 }
 .pagination-link:hover {
-  background-color: #814B18;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .pagination-link:focus {
-  outline: 2px solid #DBB590;
-  background-color: #4E2E0E;
+  outline: 2px solid rgba(242, 242, 242, 1);
+  background-color: rgba(242, 242, 242, 1);
 }
 .pagination-current {
   color: #242424;
-  background-color: rgba(242, 242, 242, 1);
+  background-color: rgb(255, 255, 255);
 }
-.pagination-prev,
-.pagination-next {
-  position: relative;
-}
-.pagination-prev {
-  background-image: url("images/arrow-left.svg");
-  background-position: center;
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-}
-.pagination-next {
-  background-image: url("images/arrow-right.svg");
-  background-position: center;
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-}
+
 .pagination-disabled {
   background-color: #595959;
 }
@@ -700,6 +685,7 @@ a.product-card-button button {
   font-weight: 700;
   color: #000000;
   text-align: center;
+  text-decoration: none
 }
 
 
@@ -738,7 +724,9 @@ a.product-card-button button {
   font-size: 14px;
   color: #050000;
 }
-
+a.footer-contacts-address-phone {
+  text-decoration: none;
+}
 
 
 /*
