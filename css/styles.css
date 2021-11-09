@@ -98,7 +98,6 @@ body {
   cursor: pointer;
 }
 
-
 /*
 .popover {
   position: absolute;
@@ -160,10 +159,12 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1200px;
+  height: 65px;
   margin: 0 auto;
   outline: 1px solid red;
   outline-offset: -5px;
   position: relative;
+
 }
 .navigation-logo {
   width: 138px;
@@ -173,6 +174,9 @@ body {
   z-index: 10px;
 }
 .navigation {
+  display: block;
+  justify-content: space-between;
+  width: 350px;
   padding: 24px 19px;
   font-family: "PT Sans", sans-serif;
   line-height: 26px;
@@ -180,16 +184,22 @@ body {
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
-  text-decoration: none;
+
 }
 .navigation-user {
-  padding: 24px 19px;
+  display: block;
+  justify-content: space-between;
+  width: 250px;
+  padding: 10px 15px;
   font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.navigation-link {
   text-decoration: none;
 }
 
@@ -329,7 +339,7 @@ li.advantages-town {
   margin: 0;
   padding: 0;
   padding-top: 56px;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   outline: 3px solid rgb(5, 92, 255);
@@ -683,7 +693,8 @@ a.product-card-button button {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   outline: 2px solid blue;
   font-size: 14px;
   font-weight: 700;
@@ -695,8 +706,10 @@ a.product-card-button button {
 
 .footer-social-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 10px;
+  justify-content: space-evenly;
   width: 200px;
   outline: 2px solid red;
   outline-offset: -5px;
@@ -705,7 +718,7 @@ a.product-card-button button {
 
 
 .footer-contacts-address-phone {
-  display: flex;
+  display: block;
   width: 720px;
   font-family: "PT Sans", sans-serif;;
   font-size: 40px;
@@ -718,7 +731,8 @@ a.product-card-button button {
 }
 
 .page-footer .htmlacademy-link {
-  display: flex;
+  display: block;
+  padding: 10px;
   width: 115px;
   font-size: 14px;
   font-size: 14px;
