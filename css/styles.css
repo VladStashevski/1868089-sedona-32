@@ -385,6 +385,7 @@ li.advantages-town {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  padding-left: 20px;
   padding-bottom: 40px;
   font-weight: 700;
   width: 528px;
@@ -392,24 +393,29 @@ li.advantages-town {
 
 .filter {
   display: flex;
+  margin: auto;
+  list-style-type: none;
 }
 
 .group {
   display: flex;
+  margin: auto;
 }
 
 .filter-button {
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+
 .catalog-filter-group {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100px;
-  margin: 0;
   margin-bottom: 40px;
-  padding: 0;
   border: none;
 }
 
@@ -429,22 +435,22 @@ li.advantages-town {
   position: relative;
   height: 4px;
   margin-bottom: 16px;
-  background-color: #ffffff;
+  background-color: #a3a2a2;
   border-radius: 2px;
 }
 
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #AF7842;
+  background-color: #ffffff;
 }
 .range-toggle {
   position: absolute;
   width: 20px;
   height: 20px;
   background: #FFFFFF;
-  border: 2px solid #242424;
-  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
   cursor: pointer;
 }
 .range-toggle:hover {
@@ -465,6 +471,10 @@ li.advantages-town {
 .range-wrapper-inputs {
   display: flex;
   justify-content: center;
+  border: 2px solid #F2F2F2;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
 }
 .catalog-filter-label {
   display: flex;
@@ -492,28 +502,88 @@ li.advantages-town {
   font-weight: 400;
   color:#FFFFFF;
 }
-.pagination {
+
+.show-more {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 1056px;
-  background-color: #FFFFFF;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
+.pagination-show-more {
+display: flex;
+justify-content: center;
+width: 625px;
+}
+
+
+
+
+.pagination-container {
+  display: flex;
+  padding: 16px;
+  background-color: #FFFFFF;
+}
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
 .pagination-link {
-  color: #FFFFFF;
-  background-color: #83B3D3;
-  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  padding: 14px 20px;
   line-height: 16px;
   font-weight: 700;
+  color: #FFFFFF;
+  background-color: rgba(131, 179, 211, 1);
+  text-decoration: none;
+  border-radius: 5px;
+}
+.pagination-link:hover {
+  background-color: #814B18;
+}
+
+.pagination-link:focus {
+  outline: 2px solid #DBB590;
+  background-color: #4E2E0E;
 }
 .pagination-current {
-  color: #83B3D3;
-  background-color: #FFFFFF;
+  color: #242424;
+  background-color: rgba(242, 242, 242, 1);
+}
+.pagination-prev,
+.pagination-next {
+  position: relative;
+}
+.pagination-prev {
+  background-image: url("images/arrow-left.svg");
+  background-position: center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+.pagination-next {
+  background-image: url("images/arrow-right.svg");
+  background-position: center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
 }
 .pagination-disabled {
-  background-color: #FFFFFF;
+  background-color: #595959;
 }
+.pagination-clear {
+  margin-top: 24px;
+  padding: 0;
+  background-color: transparent;
+}
+
+
 
 .product-list {
   display: flex;
