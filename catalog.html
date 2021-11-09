@@ -36,7 +36,10 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link" href="index.html"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z" fill="white"/>
+            <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white"/>
+            </svg><span class="visually-hidden">Главная</span></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -105,11 +108,18 @@
         </fieldset>
       </div>
 
-     <div class="group">
-    <fieldset class="catalog-filter-group">
+  <div class="group">
+     <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-
       <div class="range">
+        <div class="range-wrapper-inputs">
+          <label class="catalog-filter-label">
+           от<input class="catalog-filter-input" type="number" value="0" name="min price">
+          </label>
+          <label class="catalog-filter-label">
+           до<input class="catalog-filter-input" type="number" value="900" name="max price">
+          </label>
+         </div>
          <div class="range-scale">
           <div class="range-bar" style="left: 42px; width: 136px">
           <button class="range-toggle toggle-min" type="button">
@@ -120,18 +130,9 @@
           </button>
         </div>
         </div>
-
-        <div class="range-wrapper-inputs">
-         <label class="catalog-filter-label">
-          от<input class="catalog-filter-input" type="number" value="0" name="min price">
-         </label>
-         <label class="catalog-filter-label">
-          до<input class="catalog-filter-input" type="number" value="900" name="max price">
-         </label>
-        </div>
       </div>
-    </fieldset>
-   </div>
+     </fieldset>
+  </div>
 
         <div class="filter-button">
         <button class="button" type="submit">Применить</button>
@@ -194,6 +195,7 @@
           </svg><span>Рейтинг:8.5</span></div>
        </li>
 
+
        <li class="product-card">
         <a href="product.html"><img class="product-card-image" src="img/catalog-img/motel-desert-quail-inn.jpg" width="180" height="120" alt="Фото Мотеля"></a>
          <div class="product-card-description">
@@ -233,10 +235,14 @@
         <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
         </svg><span>Рейтинг:9.2</span></div>
        </li>
-     </ul>
+      </ul>
 
+
+     <div class="show-more">
      <button class="button pagination-show-more" type="button">Загрузить еще</button>
+     </div>
 
+    <div class="pagination-container">
      <ul class="pagination">
       <li class="pagination-item">
         <a class="pagination-link pagination-current">1</a>
@@ -257,7 +263,7 @@
         <a class="pagination-link" href="#">10</a>
        </li>
      </ul>
-
+    </div>
 
 
       <section class="newsletter-catalog">
