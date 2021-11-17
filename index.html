@@ -6,13 +6,12 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 </head>
 
 <body>
 
   <div class="container">
-
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -49,19 +48,19 @@
           <span class="visually-hidden">Понравившиеся</span>
           <div class="popover popover-favorite">
             <div class="popover-content">
-              <ul class="hotels-list">
-                <li class="hotel-card">
+              <ul class="hotels-favorites-list">
+                <li class="hotel-card-favorite">
                   <a href="#"><img class="hotel-card-image" src="img/catalog-img/motel-desert-quail-inn-small.jpg"
                       width="48" height="48" alt="Фото Гостиницы"></a>
-                  <div class="hotel-card-description">
+                  <div class="hotel-card-favorite-description">
                     <a class="hotel-link" href="#">
-                      <h2 class="hotel-card-title">Amara Resort & Spa</h2>
-                      <p>Гостиница</p>
+                      <h2 class="hotel-card-favorite-title">Desert Quail Inn</h2>
+                      <p>Мотель</p>
                     </a>
                   </div>
                   <div class="delete">
-                    <a href="#" class="delete-button"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" class="delete-button"><svg class="delete-button-icon" width="16" height="16"
+                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M15.3 2.3H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"
                           fill="black" />
@@ -78,18 +77,19 @@
                       <span class="visually-hidden">Удалить</span></a>
                   </div>
                 </li>
-                <li class="hotel-card">
-                  <a href="#"><img class="hotel-card-image" src="img/catalog-img/motel-desert-quail-inn-small.jpg"
-                      width="48" height="48" alt="Фото Гостиницы"></a>
-                  <div class="hotel-card-description">
+                <li class="hotel-card-favorite">
+                  <a href="#"><img class="hotel-card-image"
+                      src="img/catalog-img/apartments-villas-at-poco-diablo-small.jpg" width="48" height="48"
+                      alt="Фото Гостиницы"></a>
+                  <div class="hotel-card-favorite-description">
                     <a class="hotel-link" href="#">
-                      <h2 class="hotel-card-title">Amara Resort & Spa</h2>
-                      <p>Гостиница</p>
+                      <h2 class="hotel-card-favorite-title">Villas at Poco Diablo</h2>
+                      <p>Апартаменты</p>
                     </a>
                   </div>
                   <div class="delete">
-                    <a href="#" class="delete-button"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" class="delete-button"><svg class="delete-button-icon" width="16" height="16"
+                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M15.3 2.3H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"
                           fill="black" />
@@ -107,7 +107,7 @@
                   </div>
                 </li>
               </ul>
-              <a href="#" class="favarite-button button">В избранное</a>
+              <a href="#" class="all-favorites-button">Все избранные</a>
             </div>
           </div>
         </div>
@@ -122,13 +122,11 @@
       </section>
       <section class="advantages">
         <div class="advantages-header">
-          <h2 class="advantages-header-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="advantages-header-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantages-header-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <h2 class="visually-hidden">Преимущества</h2>
-
         <ul class="advantages-list">
-
           <li class="advantages-item">
             <div class="advantages-item">
               <h3 class="advantages-title">Настоящий городок</h3><span>- №1 -</span>
@@ -139,15 +137,17 @@
             <ul class="feature-town">
               <li class="advantages-town-house">
                 <h3 class="advantages-title">Жилье</h3>
-                <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br>всё как в кино!</p>
               </li>
               <li class="advantages-town-food">
                 <h3 class="advantages-title">Еда</h3>
-                <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не
+                  разочаруетесь!</p>
               </li>
               <li class="advantages-town-gift">
                 <h3 class="advantages-title">Сувениры</h3>
-                <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+                <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!
+                </p>
               </li>
             </ul>
           </li>
@@ -168,7 +168,7 @@
             <h3 class="advantages-title">Красивая дорога</h3><span>- №4 -</span>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages-place-turist">
+          <li class="advantages-place-tourist">
             <h3 class="advantages-title">Мало туристов</h3><span>- №5 -</span>
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
@@ -177,8 +177,8 @@
       <div class="search-container">
         <section class="search-hotel">
           <h2 class="search-hotel-title">Заинтересовались?</h2>
-          <p class="search-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-            гостиниц в Седоне</p>
+          <p class="search-hotel-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
+            предложения гостиниц в Седоне</p>
           <a href="catalog.html" class="button-search">Поиск гостиницы в cедоне</a>
         </section>
       </div>
@@ -219,15 +219,10 @@
         </li>
         <li class="footer-social-item">
           <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS"><svg
-              width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"
-                  fill="#83B3D3" />
-              </g>
-              <defs>
-                <rect width="20" height="16" fill="white" />
-              </defs>
+              width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.8136 0.418176C18.6746 0.648666 19.3513 1.32532 19.5818 2.18637C19.9983 3.74547 20 7.00033 20 7.00033C20 7.00033 20 10.2552 19.5818 11.8143C19.3513 12.6753 18.6746 13.352 17.8136 13.5825C16.2545 14.0007 9.99996 14.0007 9.99996 14.0007C9.99996 14.0007 3.74547 14.0007 2.18636 13.5825C1.32532 13.352 0.648666 12.6753 0.418176 11.8143C0 10.2552 0 7.00033 0 7.00033C0 7.00033 0 3.74547 0.418176 2.18637C0.648666 1.32532 1.32532 0.648666 2.18636 0.418176C3.74547 0 9.99996 0 9.99996 0C9.99996 0 16.2545 0 17.8136 0.418176ZM13.194 7.00061L7.99808 10.0002V4.00092L13.194 7.00061Z"
+                fill="#83B3D3" />
             </svg>
             <span class="visually-hidden">Ютуб</span> </a>
         </li>
@@ -273,55 +268,90 @@
         <span class="visually-hidden">Сделано в .html academy</span></a>
     </footer>
 
-
     <div class="modal-container modal-container-close">
-      <div class="modal modal-search">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
+      <div class="modal">
         <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <div class="date">
-            <div class="start-day">
-              <label for="start">Дата заезда</label> <input type="date" id="start" name="trip-start" value="2020-01-01"
-                min="2020-01-01" max="2021-11-15">
-            </div>
-            <div class="end-day">
-              <label for="end">Дата выезда</label> <input type="date" id="end" name="trip-start" value="2021-09-01"
-                min="2021-09-01" max="2021-11-15">
-            </div>
+          <div class="modal-title-close">
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           </div>
-          <div class="number-of-people">
-            <h3>Взрослые</h3>
-            <button class="bt-minus">
-              <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
-              </svg>
-            </button>
-            <input type="text" value="1" size="2" class="quantity" data-max-count="20" />
-            <button class="bt-plus">
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
-              </svg>
-            </button>A
-            <h3>Дети</h3>
-            <button class="bt-minus">
-              <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
-              </svg>
-            </button>
-            <input type="text" value="1" size="2" class="quantity" data-max-count="20" />
-            <button class="bt-plus">
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
-              </svg>
-            </button>
-          </div>
-          <a href="catalog.html" class="button-search">Найти</a>
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label class="modal-form-lable message-error" for="date-entry">Дата заезда:</label>
+              <div class="field-group-wrapper">
+                <p class="field-icon">
+                  <input class="field date-field" id="date-entry" type="text" name="date-entry" value="27 апреля 2020"
+                    placeholder="Укажите дату">
+                </p>
+              </div>
+            </div>
+            <div class="field-group">
+              <label class="modal-form-lable message-success" for="date-departure">Дата выезда:</label>
+              <div class="field-group-wrapper">
+                <p class="field-icon">
+                  <input class="field date-field" id="date-departure" type="text" name="date-departure"
+                    value="1 сентября 2021" placeholder="Укажите дату">
+                </p>
+              </div>
+            </div>
+            <div class="search-form-options">
+              <div class="field-group">
+                <label class=" modal-form-lable" for="count-adult">Взрослые:</label>
+                <div class="count-visitors">
+                  <button class="count-input-button count-input-minus-button" type="button">
+                    <span class="visually-hidden">Минус</span>
+                    <svg class="count-icon icon-minus" aria-hidden="true" focusable="false" width="13" height="1"
+                      viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0v1h13V0H0Z" />
+                    </svg>
+                  </button>
+                  <p>
+                    <input class="field" id="count-adult" type="number" value="2" name="count-adult" />
+                  </p>
+                  <button class="count-input-button count-input-plus-button" type="button">
+                    <span class="visually-hidden">Плюс</span>
+                    <svg class="count-icon icon-plus" aria-hidden="true" focusable="false" width="13" height="13"
+                      viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="field-group">
+                <span class="form-label-icon">
+                  <label class="modal-form-lable" for="count-children">Дети:</label>
+                  <button class="tooltip tooltip-a" type="button"></button>
+                  <span class="tooltiptext">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <div class="count-visitors">
+                  <button class="count-input-button count-input-minus-button" type="button">
+                    <span class="visually-hidden">Минус</span>
+                    <svg class="count-icon icon-minus" aria-hidden="true" focusable="false" width="13" height="1"
+                      viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0v1h13V0H0Z" />
+                    </svg>
+                  </button>
+                  <p>
+                    <input class="field" id="count-children" type="number" value="1" name="count-children" />
+                  </p>
+                  <button class="count-input-button count-input-plus-button" type="button">
+                    <span class="visually-hidden">Плюс</span>
+                    <svg class="count-icon icon-plus" aria-hidden="true" focusable="false" width="13" height="13"
+                      viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="modal-search-button" type="submit">Найти</button>
+          </form>
         </section>
       </div>
     </div>
-
   </div>
 </body>
 
