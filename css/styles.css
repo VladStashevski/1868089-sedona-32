@@ -61,7 +61,7 @@ body {
 .navigation-link-current::before {
   position: absolute;
   right: 0;
-  bottom: -21px;
+  bottom: -23px;
   left: 0;
   height: 3px;
   background-color: rgba(117, 98, 87, 100%);
@@ -74,6 +74,12 @@ body {
 }
 
 .navigation-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #ffffff, 0 0 0 10px #83b3d3;
+  border-radius: 5px;
+}
+
+.control-input[type="checkbox"]:focus {
   outline: none;
   box-shadow: 0 0 0 5px #ffffff, 0 0 0 10px #83b3d3;
   border-radius: 5px;
@@ -561,7 +567,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 72px;
+  padding: 12px 78px 16px 71px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -615,8 +621,16 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+.control:focus .control-mark {
+  outline: none;
+  box-shadow: 0 0 0 2px #83b3d3;
+  border-radius: 5px;
+}
+
 .control:hover .control-mark {
-  background-color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  box-shadow: 0 0 0 2px #83b3d3;
+  border-radius: 5px;
 }
 
 .control:active .control-mark {
@@ -805,24 +819,28 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  padding-top: 20px;
   min-width: 200px;
 }
 
 div.advantages-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
   margin: 0;
-  padding: 45px 0;
+  padding: 95px 0 0 0;
   width: 400px;
   background-color: #83b3d3;
   color: rgba(255, 255, 255, 1);
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 21px
+}
+
+.advantages-list span {
+  display: flex;
+  padding-bottom: 29px;
+  padding-top: 10px;
 }
 
 .advantages-title {
@@ -834,6 +852,7 @@ div.advantages-item {
   margin: 0;
   padding: 0;
   min-width: 200px;
+  padding-bottom: 20px;
   margin-left: 100px;
   margin-right: 100px
 }
@@ -849,22 +868,21 @@ div.advantages-item {
   flex-direction: column;
   align-items: center;
   align-self: baseline;
-  margin: 0;
-  padding: 0;
-  padding-top: 60px;
-  padding-bottom: 140px;
   width: 400px;
   color: rgba(51, 51, 51, 1);
   background-color: rgba(131, 179, 211, 0.12);
   position: relative;
+  padding: 184px 0 88px 0;
 }
 
 .advantages-town-house:before {
   background-image: url("../img/house.svg");
-  position: static;
+  position: absolute;
   content: "";
   width: 75px;
   height: 72px;
+  top: 89px;
+  left: 164px;
 }
 
 img.content-image-2 {
@@ -882,20 +900,20 @@ img.content-image-1 {
   align-self: baseline;
   margin: 0;
   padding: 0;
-  padding-top: 56px;
-  padding-bottom: 67px;
   width: 400px;
   color: rgba(51, 51, 51, 1);
   background-color: rgba(255, 255, 255, 1);
-  position: relative;
+  position: relative
 }
 
 .advantages-town-food:before {
   background-image: url("../img/food.svg");
-  position: static;
+  position: absolute;
   content: "";
   width: 74px;
   height: 70px;
+  top: -94px;
+  left: 162px;
 }
 
 .advantages-town-gift {
@@ -904,20 +922,20 @@ img.content-image-1 {
   align-items: center;
   align-self: baseline;
   margin: 0;
-  padding: 0;
-  padding-top: 56px;
-  padding-bottom: 138px;
   width: 400px;
   color: rgba(51, 51, 51, 1);
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 184px 0 88px 0;
 }
 
-.advantages-town-gift:before {
+.advantages-town-gift::after {
   background-image: url("../img/gift.svg");
-  position: static;
+  position: absolute;
   content: "";
   width: 64px;
   height: 76px;
+  top: 1300px;
+  left: 1160px;
 }
 
 .advantages-place-land {
@@ -927,12 +945,11 @@ img.content-image-1 {
   align-self: baseline;
   text-align: center;
   margin: 0;
-  padding: 0;
-  padding-top: 56px;
-  padding-bottom: 168px;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   color: rgba(51, 51, 51, 1);
+  padding-bottom: 109px;
+  padding-top: 95px;
 }
 
 .advantages-place-road {
@@ -942,12 +959,11 @@ img.content-image-1 {
   align-self: baseline;
   text-align: center;
   margin: 0;
-  padding: 0;
-  padding-top: 56px;
-  padding-bottom: 189px;
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
   color: rgba(51, 51, 51, 1);
+  padding-bottom: 109px;
+  padding-top: 95px;
 }
 
 .advantages-place-tourist {
@@ -957,12 +973,11 @@ img.content-image-1 {
   align-self: baseline;
   text-align: center;
   margin: 0;
-  padding: 0;
-  padding-top: 56px;
-  padding-bottom: 197px;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   color: rgba(51, 51, 51, 1);
+  padding-bottom: 109px;
+  padding-top: 95px;
 }
 
 .search-container {
@@ -975,7 +990,7 @@ img.content-image-1 {
   font-size: 22px;
   line-height: 26px;
   color: rgba(51, 51, 51, 1);
-  padding-bottom: 108px;
+  padding-bottom: 88px;
   margin: 0;
 }
 
@@ -1000,8 +1015,8 @@ img.content-image-1 {
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 15px;
-  padding-top: 89px;
+  padding-bottom: 29px;
+  padding-top: 91px;
 }
 
 .search-hotel-description {
@@ -1009,7 +1024,7 @@ img.content-image-1 {
   flex-direction: row;
   justify-content: center;
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 58px;
   text-align: center;
   padding-left: 12px;
   padding-right: 25px;
@@ -1040,7 +1055,7 @@ img.content-image-1 {
   color: rgba(255, 255, 255, 1);
   margin: 0;
   padding-top: 94px;
-  padding-bottom: 131px;
+  padding-bottom: 132px;
 }
 
 .newsletter {
@@ -1088,7 +1103,7 @@ img.content-image-1 {
 .newsletter-description {
   padding-bottom: 85px;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 2px;
   padding-right: 91px;
   padding-left: 90px
 }
@@ -1782,7 +1797,7 @@ span.rating {
 }
 
 .modal-container-close {
-
+  display: none;
 }
 
 .modal {
@@ -1877,6 +1892,7 @@ span.rating {
   padding: 3px 18px;
   background-color: rgba(242, 242, 242, 1);
   border: 2px solid transparent;
+  border-radius: 4px;
 }
 
 .field-group input:hover,
