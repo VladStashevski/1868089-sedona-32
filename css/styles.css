@@ -926,16 +926,17 @@ img.content-image-1 {
   color: rgba(51, 51, 51, 1);
   background-color: rgba(131, 179, 211, 0.12);
   padding: 184px 0 88px 0;
+  position: relative;
 }
 
-.advantages-town-gift::after {
+.advantages-town-gift:before {
   background-image: url("../img/gift.svg");
   position: absolute;
   content: "";
   width: 64px;
   height: 76px;
-  top: 1300px;
-  left: 1160px;
+  top: 84px;
+  left: 169px
 }
 
 .advantages-place-land {
