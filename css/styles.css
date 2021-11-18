@@ -794,12 +794,7 @@ body {
   content: "";
 }
 
-.advantages-list,
-.feature-town,
-.footer-social-list,
-.hotels-list,
-.pagination,
-.breadcrumbs, ul {
+.advantages-list, .feature-town, .footer-social-list, .hotels-list, .pagination, .breadcrumbs, ul {
   margin: 0;
   padding: 0;
 }
