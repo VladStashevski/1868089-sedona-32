@@ -2104,20 +2104,6 @@ input[type="text"] {
   position: relative;
 }
 
-.field-icon::after {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  display: flex;
-  align-items: center;
-  left: 386px;
-  top: 50%;
-  content: "";
-  transform: translateY(-50%);
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-}
-
 .date-field {
   width: 420px;
 }
