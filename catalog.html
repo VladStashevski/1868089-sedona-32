@@ -15,7 +15,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-link" href="index.html">Главная</a>
-        <a class="navigation-link" href="about-sedona.html">О Седоне</a>
+        <a class="navigation-link" href="#">О Седоне</a>
         <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
       </nav>
       <a class="navigation-logo" href="index.html">
@@ -52,7 +52,7 @@
                   <span class="visually-hidden">Главная</span></a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
           </div>
@@ -126,7 +126,7 @@
                     </label>
                   </div>
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0px; width: 220px">
+                    <div class="range-bar">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
@@ -140,7 +140,7 @@
             </div>
             <div class="filter-button">
               <button class="button-on" type="submit">Применить</button>
-              <button class="button-off" type="submit">Сбросить</button>
+              <button class="button-off" type="reset">Сбросить</button>
             </div>
           </form>
         </div>
@@ -235,7 +235,7 @@
               </div>
               <div class="hotel-card-button">
                 <a href="#" class="more-button button">Подробнее</a>
-                <a href="#" class="favorite-button button favorite-button-current">В избранное</a>
+                <a href="#" class="favorite-button button favorite-button-current">В избранном</a>
               </div>
             </div>
             <div class="hotel-card-rating">
@@ -313,8 +313,8 @@
           <P class="newsletter-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</P>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="newsletter-email">
-              <label class="visually-hidden">Ваш e-mail</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter"
+              <label class="visually-hidden" for="newsletter">Ваш e-mail</label>
+              <input class="field newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter"
                 required>
               <button class="newsletter-button" type="submit">Подписаться</button>
             </p>
