@@ -458,7 +458,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 26px;
+  padding: 0;
 }
 
 .hotel-card-favorite {
@@ -546,6 +546,13 @@ body {
   margin-bottom: 24px;
 }
 
+.delete-button {
+  border: #ffffff;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
 .delete-button:hover {
   opacity: 0.6;
 }
@@ -565,7 +572,7 @@ body {
 }
 
 .delete-button:active {
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .visually-hidden {
@@ -794,35 +801,7 @@ body {
   content: "";
 }
 
-.advantages-list ul {
-  margin: 0;
-  padding: 0;
-}
 
-.feature-town ul {
-  margin: 0;
-  padding: 0;
-}
-
-.footer-social-list ul {
-  margin: 0;
-  padding: 0;
-}
-
-.hotels-list ul {
-  margin: 0;
-  padding: 0;
-}
-
-.pagination ul {
-  margin: 0;
-  padding: 0;
-}
-
-.breadcrumbs ul {
-  margin: 0;
-  padding: 0;
-}
 
 .welcome {
   display: flex;
@@ -894,6 +873,8 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-item {
@@ -954,6 +935,8 @@ div.advantages-item {
   display: flex;
   flex-direction: row;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-town-house {
@@ -1307,6 +1290,8 @@ img.content-image-1 {
 
 .catalog-filter-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-filter {
@@ -1376,10 +1361,14 @@ img.content-image-1 {
   font-size: 16px;
   line-height: 21px;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs-link {
   display: flex;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .breadcrumbs-link-main {
@@ -1414,6 +1403,8 @@ img.content-image-1 {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
+  left: 0px;
+  width: 220px;
 }
 
 .range-toggle {
@@ -1815,12 +1806,12 @@ span.rating {
 
 .card-grid-toggle:hover {
   outline: none;
-  box-shadow: 0 0 0 1px #83b3d3;
+  box-shadow: 0 0 0 2px #83b3d3;
 }
 
 .card-grid-toggle:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #83b3d3;
+  box-shadow: 0 0 0 2px #83b3d3;
 }
 
 .card-grid-toggle:active {
@@ -1853,6 +1844,13 @@ span.rating {
   background: #e5e5e5;
   color: #000000;
   border: 2px solid #000000;
+  outline: none;
+}
+
+.newsletter-field:active:invalid {
+  background: #e5e5e5;
+  color: #000000;
+  border: 2px solid #FF5757;
   outline: none;
 }
 
